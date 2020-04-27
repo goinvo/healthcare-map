@@ -1,0 +1,27 @@
+{
+  "name": "healthcare-map",
+  "version": "0.1.0",
+  "description": "server",
+  "repository": "healthcare-map.github.io",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js | grunt"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-autoprefixer": "^3.0.4",
+    "grunt-contrib-clean": "^1.1.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^2.2.1",
+    "grunt-contrib-uglify": "^3.3.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-sass": "^2.0.0",
+    "jit-grunt": "^0.9.1",
+    "load-grunt-config": "^0.17.2",
+    "time-grunt": "^1.4.0"
+  }
+}
