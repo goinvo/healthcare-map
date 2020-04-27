@@ -1,0 +1,11 @@
+default: 
+  - 'watch:css'
+
+build:
+  - 'clean'
+  - 'sass'
+  - 'autoprefixer'
+  - 'cssmin'
+  - 'uglify'
+  - 'copy'
+

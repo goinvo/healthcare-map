@@ -1,0 +1,15 @@
+body {
+	margin: 0;
+	font-family: $font-fam-sans;
+	color: $c-text;
+}
+
+header, section, footer {
+	width: 100%;
+	position: relative;
+}
+
+.container {
+	max-width: 1256px;
+	margin: 0 auto;
+}
