@@ -33,4 +33,4 @@ You can access the local server at [localhost:1337](localhost:1337)
 
 ### Committing updates
 
-As a github.io page, when changes are committed to master, they are pushed to the live site at [https://healthcare-map.github.io/](https://healthcare-map.github.io/)
+As a github.io page, when changes are committed to master, they are pushed to the live site at [https://goinvo.github.io/healthcare-map.github.io/](https://goinvo.github.io/healthcare-map.github.io/) until a new domain can be pointed at it.
