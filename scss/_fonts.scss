@@ -3,7 +3,10 @@
 }
 
 $font-fam-sans: 'Source Sans Pro',  Arial, sans-serif;
+$fs-sm: .75rem;
+$fs-base: 1rem;
 
 p {
-	font-size: 1rem;
+	font-size: $fs-base;
+	max-width: 750px;
 }

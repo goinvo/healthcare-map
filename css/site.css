@@ -2,7 +2,8 @@
   box-sizing: border-box; }
 
 p {
-  font-size: 1rem; }
+  font-size: 1rem;
+  max-width: 750px; }
 
 body {
   margin: 0;
@@ -13,8 +14,15 @@ header, section, footer {
   width: 100%;
   position: relative; }
 
+footer {
+  margin-top: 50px;
+  font-size: 0.75rem; }
+  footer .license, footer .copyright {
+    display: inline-block; }
+  footer .copyright {
+    margin-left: 30px; }
+
 .container {
   max-width: 1256px;
   margin: 0 auto;
-  padding: 0 30px;
-  border: solid red 1px; }
+  padding: 0 30px; }

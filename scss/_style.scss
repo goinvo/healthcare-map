@@ -9,9 +9,19 @@ header, section, footer {
 	position: relative;
 }
 
+footer {
+	margin-top: 50px;
+	font-size: $fs-sm;
+	.license, .copyright {
+		display: inline-block;
+	}
+	.copyright {
+		margin-left: 30px;
+	}
+}
+
 .container {
 	max-width: 1256px;
 	margin: 0 auto;
 	padding: 0 30px;
-	border: solid red 1px;
 }
