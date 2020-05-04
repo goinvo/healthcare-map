@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box; }
+
+p {
+  font-size: 1rem; }
+
+body {
+  margin: 0;
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  color: #6B6B6B; }
+
+header, section, footer {
+  width: 100%;
+  position: relative; }
+
+.container {
+  max-width: 1256px;
+  margin: 0 auto;
+  padding: 0 30px;
+  border: solid red 1px; }
