@@ -23,13 +23,13 @@ As you make and save changes, grunt will watch the index file and sass folder an
  $ grunt
 ```
 
-To view changes via a [local server](localhost:1337), open a new tab in your shell and run
+To view changes via a [local server](localhost:8001), open a new tab in your shell and run
 
 ```
  $ node server
 ```
 
-You can access the local server at [localhost:1337](localhost:1337)
+You can access the local server at [localhost:1337](localhost:8001)
 
 ### Committing updates
 

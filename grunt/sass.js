@@ -1,6 +1,8 @@
+const sass = require('node-sass');
 module.exports = {
 	dev: {
 		options: {
+			implementation: sass,
 			style: 'expanded'
 		},
 		files: [

@@ -10,7 +10,7 @@ app.post("/mockSubmission", function(req, res) {
 	res.json(req.body);
 });
 
-const server = app.listen(1337, () => {
+const server = app.listen(8001, () => {
   var host = LOCAL_IP(),
   	port = server.address().port;
 
