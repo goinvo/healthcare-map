@@ -12,21 +12,50 @@
   <header></header>
   <div class="container">
     <h1>US Healthcare System Map</h1>
+    <p>An opensource work in progress by
+      <a href="https://www.goinvo.com/" target="_blank">GoInvo</a>
+      <br>Last update on 11.Nov.2020.
+    </p>
 
     <h2>Problem</h2>
-    <p>There is no single view (diagram or schema) of the US healthcare system that describes the main actors and organizations, proces flows between those entities (care, decisions, rules, financial/funding), legal connections, or health access and outcomes impacts.</p>
+    <p>There is no single diagram or map of the US healthcare system that effectively describes the main actors and relationships between actors.
+    The US healthcare system is complex, and many (healthcare policy makers, patients, medical students, etc) would benefit from a System Map.
+    Unfortunately, current healthcare system maps are too narrowly focused and/or struggle to clarify the complexity of the system (see examples below).</p>
+    <div class="sketch-row">
+      <img src="./images/past_examples.png"/>
+    </div>
 
-    <h2>What we're doing</h2>
-    <p>We're in the process of outlining, designing, and building an open source map of the US healthcare system.</p>
+    <h2>Our Goal</h2>
+    <p>Our goal at GoInvo is to create and open source map of the US healthcare system. Currently, we are in the process of outlining and designing the map. Ultimately, we hope to build an interactive, mobile-friendly map.</p>
 
     <h2>Impact</h2>
-    <p>We hope to not just shine a light on the structure of the US healthcare system, but as an open source tool, it can become a resource for academics, healthcare analysts, health IT engineers and designers, entrepreneurs finding their place in the system, and most of all for healthcare governance and policymakers</p>
+    <p>We hope to not only shine a light on the structure of the US healthcare system but to create an opensource resource for academics, healthcare analysts, health IT engineers and designers, entrepreneurs finding their place in the system, healthcare governance and policymakers, patients, and more.</p>
 
-    <h2>Concepts</h2>
-    <p>Coming soon...</p>
-
-    <h2>Previous Examples</h2>
-    <p>Coming soon...</p>
+    <h2>Initial Concepts</h2>
+    <p>We began by mapping out governance bodies.</p>
+    <div class="sketch-row">
+      <img src="./images/governance_map.png"/>
+    </div>
+    <p>This kind of hierarchical diagram became lengthy very quickly, so we started to explore a layout and map that could reflect various key roles in the Healthcare System (Research, Pharma, Care, Payment).</p>
+    <div class="sketch-row">
+      <img src="./images/hc_sys_map_dan1.png"/>
+    </div>
+    <div class="sketch-row">
+      <img src="./images/hc_sys_map_dan2.png"/>
+    </div>
+    <p>This led us to an entity relationship model </p>
+    <div class="sketch-row">
+      <img src="./images/entity_relationship_model.png"/>
+    </div>
+    <p>Going through this process, we realized that "Entities" (like CVS) hardly ever stick to consistent "Roles" (such as filling prescriptions). Even in that example, CVS expands their role to Pharmacy benefit
+      Manager and even some primary care delivery. Trying to create a map that shows how all of these Roles fit together is nearly impossible because each Entity often expands their roles in different ways. Healthcare
+      isn't clear cut. One way to handle this complexity is to map out general roles and then place entities on top of that map. See the examples below.
+    <div class="sketch-row">
+      <img src="./images/hc_roles_map.png"/>
+    </div>
+    <div class="sketch-row">
+      <img src="./images/patient_centered_map.png"/>
+    </div>
   </div>
   <footer>
     <div class="container">

@@ -1,14 +1,11 @@
 * {
   box-sizing: border-box; }
 
-p {
-  font-size: 1rem;
-  max-width: 750px; }
-
 body {
   margin: 0;
-  font-family: "Source Sans Pro", Arial, sans-serif;
-  color: #6B6B6B; }
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  color: #353535;
+  font-size: 16px; }
 
 header, section, footer {
   width: 100%;
@@ -26,3 +23,52 @@ footer {
   max-width: 1256px;
   margin: 0 auto;
   padding: 0 30px; }
+
+p, h1, h2, h3 {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 400; }
+
+h1 {
+  font-size: 3em;
+  color: #162157; }
+
+h2 {
+  margin-bottom: .25rem;
+  color: #162157; }
+
+p {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.7rem;
+  max-width: 750px; }
+
+.sketch-row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 2rem;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  .sketch-row__wireframe {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%; }
+    @media only screen and (min-width: 800px) {
+      .sketch-row__wireframe {
+        -ms-flex-preferred-size: 35%;
+            flex-basis: 35%;
+        -ms-flex-negative: 0;
+            flex-shrink: 0; } }
+  .sketch-row__sketch {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%; }
+    .sketch-row__sketch--tall {
+      max-width: 600px; }
+  .sketch-row--spacing > *:not(:first-of-type) {
+    margin-left: 20px; }
+  .sketch-row img {
+    width: 100%; }
+  @media only screen and (min-width: 800px) {
+    .sketch-row {
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap; } }
