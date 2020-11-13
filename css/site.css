@@ -12,7 +12,8 @@ p, h1, h2, h3 {
 
 h1 {
   font-size: 3em;
-  color: #162157; }
+  color: #162157;
+  margin-top: 40px; }
 
 h2 {
   color: #162157;
