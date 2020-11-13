@@ -2,11 +2,10 @@
 	box-sizing: border-box;
 }
 
-$font-fam-sans: 'Source Sans Pro',  Arial, sans-serif;
+$font-fam-sans: "Open Sans", Helvetica, Arial, sans-serif;
 $fs-sm: .75rem;
 $fs-base: 1rem;
 
-p {
-	font-size: $fs-base;
-	max-width: 750px;
-}
+$font-fam-default: 'Open Sans', Helvetica, Arial, sans-serif;
+$font-weight-normal: 400;
+$font-weight-bold: 600;

@@ -4,19 +4,51 @@ body {
 	color: $c-text;
 }
 
+p, h1, h2, h3 {
+  font-family: $font-fam-default;
+	font-weight: $font-weight-normal;
+}
+
+h1 {
+	font-size: 3em;
+	color: $c-blue-dark;
+}
+
+h2 {
+	color: $c-blue-dark;
+	font-size: 2em;
+}
+
+p {
+	font-size: $fs-base;
+	max-width: 750px;
+}
+
+a, a:visited {
+	color: $c-link;
+	&:hover {
+		color: #A9C8E5;
+		cursor: pointer;
+	}
+}
+
 header, section, footer {
 	width: 100%;
 	position: relative;
 }
 
 footer {
-	margin-top: 50px;
-	font-size: $fs-sm;
-	.license, .copyright {
-		display: inline-block;
-	}
+	background: $bg-dark-grey;
+  color: $c-text;
+	padding: 50px 0;
+	text-align: center;
+	margin-top: 20px;
 	.copyright {
-		margin-left: 30px;
+		padding-top: 30px;
+		p {
+			font-size: .675rem;
+			line-height: 1rem;
+		}
 	}
 }
 
@@ -24,4 +56,42 @@ footer {
 	max-width: 1256px;
 	margin: 0 auto;
 	padding: 0 30px;
+}
+
+.sketch-row {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 2rem;
+	justify-content: center;
+
+	&__wireframe {
+		flex-basis: 100%;
+
+		@media only screen and (min-width: 800px) {
+			flex-basis: 35%;
+			flex-shrink: 0;
+		}
+	}
+
+	&__sketch {
+		flex-basis: 100%;
+
+		&--tall {
+			max-width: 600px;
+		}
+	}
+
+	&--spacing {
+		> *:not(:first-of-type) {
+			margin-left: 20px;
+		}
+	}
+
+	img {
+		width: 100%;
+	}
+
+	@media only screen and (min-width: 800px) {
+		flex-wrap: nowrap;
+	}
 }
