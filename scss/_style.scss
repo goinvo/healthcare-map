@@ -5,6 +5,9 @@ body {
 	margin: 0;
 	font-family: $font-fam-sans;
 	color: $c-text;
+	@media only screen and (min-width: 800px) {
+	margin: 60px 40px;
+	}
 }
 
 p, h1, h2, h3 {
@@ -14,13 +17,18 @@ p, h1, h2, h3 {
 
 h1 {
 	font-size: 3em;
+	font-weight: 600;
 	color: $c-blue-dark;
 	margin-top: 40px;
+	@media only screen and (min-width: 800px) {
+	font-size: 5em;}
 }
 
 h2 {
 	color: $c-blue-dark;
 	font-size: 2em;
+	@media only screen and (min-width: 800px) {
+	font-size: 4em;}
 }
 
 h3 {
