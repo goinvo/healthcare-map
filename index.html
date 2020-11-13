@@ -22,7 +22,7 @@
     <p>There is no single diagram or map of the US healthcare system that effectively describes the main actors and relationships between actors.
       <br>
       <br>
-Unfortunately, current healthcare system maps are too narrowly focused and/or struggle to clarify the complexity of the system (see examples below). The US healthcare system is complex, and we (healthcare policy makers, patients, medical students, etc) would benefit from a dynamic System Map.</p>
+   Unfortunately, current healthcare system maps are too narrowly focused and/or struggle to clarify the complexity of the system (see examples below). The US healthcare system is complex, and we (healthcare policy makers, patients, medical students, etc) would benefit from a dynamic System Map.</p>
     <div class="sketch-row">
       <img src="./images/past_examples.png"/>
     </div>
@@ -33,7 +33,9 @@ Unfortunately, current healthcare system maps are too narrowly focused and/or st
     <h2>Impact</h2>
     <p>We hope to not only shine a light on the structure of the US healthcare system but to create an opensource resource for academics, healthcare analysts, health IT engineers and designers, entrepreneurs finding their place in the system, healthcare governance and policymakers, patients, and more.</p>
 
-    <h2>Initial Concepts</h2>
+    <h2>Initial Work</h2>
+
+    <h3>Early Concepts</h3>
 
     <p>We began by mapping out governance bodies.</p>
     <div class="sketch-row">
@@ -48,11 +50,22 @@ Unfortunately, current healthcare system maps are too narrowly focused and/or st
       <img src="./images/hc_sys_map_dan2.png"/>
     </div>
 
-    <p>This led us to an entity relationship model </p>
+    <h3>Data Model</h3>
+    <p>As we dug deeper and got a feel for the actors at play, we explored data models to represent the complexity of different types of players, their organization, and the relationships between them. This allowed us to step sideways from the challenge of visualizing the system, and focus on describing or defining the system in parallel. With a robust data model and database in hand, we will construct custom views to zero in on whatever lens, and facet, or detail is of interest in the system.</p>
+
+    <a href="https://airtable.com/shrn8nBZKLQSGUDGN" target="_blank">
+          <br/>
+          <button>
+            View our Data Model in AirTable
+          </button>
+          <br/>
+    </a>
+
     <div class="sketch-row">
-      <img src="./images/entity_relationship_model.png"/>
+      <img src="./images/data_model.png"/>
     </div>
 
+    <h3>Mapping Roles VS Entities</h3>
     <p>Going through this process, we realized that "Entities" (like CVS) hardly ever stick to consistent "Roles" (such as filling prescriptions). Even in that example, CVS expands their role to Pharmacy benefit
       Manager and even some primary care delivery. Trying to create a map that shows how all of these Roles fit together is nearly impossible because each Entity often expands their roles in different ways. Healthcare
       isn't clear cut. One way to handle this complexity is to map out general roles and then place entities on top of that map. See the examples below.

@@ -1,3 +1,6 @@
+$border-radius: 6px;
+$border-sz: 4px;
+
 body {
 	margin: 0;
 	font-family: $font-fam-sans;
@@ -19,6 +22,11 @@ h2 {
 	font-size: 2em;
 }
 
+h3 {
+	color: $c-blue-dark;
+	font-weight: bold;
+}
+
 p {
 	font-size: $fs-base;
 	max-width: 750px;
@@ -27,7 +35,7 @@ p {
 a, a:visited {
 	color: $c-link;
 	&:hover {
-		color: #A9C8E5;
+		color: $c-blue-dark;
 		cursor: pointer;
 	}
 }
@@ -47,16 +55,21 @@ footer {
 		padding-top: 30px;
 		p {
 			font-size: .675rem;
-			line-height: 1rem;
-		}
+			line-height: 1rem; }
 	}
 }
 
-.container {
-	max-width: 1256px;
-	margin: 0 auto;
-	padding: 0 30px;
+.image {
+	width: 100%;
+  // max-width: 750px;
+  height: auto;
+  // box-shadow: 0px 4px 8px 2px rgba(14,120,197,.2);
 }
+
+.container {
+	max-width: 1000px;
+	margin: 0 auto;
+  padding: 0 20px; }
 
 .sketch-row {
 	display: flex;
@@ -64,34 +77,53 @@ footer {
 	margin-top: 2rem;
 	justify-content: center;
 
-	&__wireframe {
-		flex-basis: 100%;
+		&__wireframe {
+			flex-basis: 100%;
+
+			@media only screen and (min-width: 800px) {
+				flex-basis: 35%;
+				flex-shrink: 0;
+			}
+		}
+
+		&__sketch {
+			flex-basis: 100%;
+
+			&--tall {
+				max-width: 600px;
+			}
+		}
+
+		&--spacing {
+			> *:not(:first-of-type) {
+				margin-left: 20px;
+			}
+		}
+
+		img {
+			width: 100%;
+		}
 
 		@media only screen and (min-width: 800px) {
-			flex-basis: 35%;
-			flex-shrink: 0;
+			flex-wrap: nowrap;
 		}
 	}
 
-	&__sketch {
-		flex-basis: 100%;
+button,
+.button {
+	border-radius: $border-radius;
+	padding: 20px 40px;
+	background: $c-link;
+	font-family: $font-fam-default;
+  font-size: 24px;
+	color: $c-white;
+	font-size: 1rem;
 
-		&--tall {
-			max-width: 600px;
-		}
-	}
-
-	&--spacing {
-		> *:not(:first-of-type) {
-			margin-left: 20px;
-		}
-	}
-
-	img {
-		width: 100%;
-	}
-
-	@media only screen and (min-width: 800px) {
-		flex-wrap: nowrap;
+	&:hover,
+	&:active,
+	&.active {
+		cursor: pointer;
+		background: $c-blue-dark;
+		color: $c-white;
 	}
 }

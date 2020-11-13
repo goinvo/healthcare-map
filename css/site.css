@@ -18,6 +18,10 @@ h2 {
   color: #162157;
   font-size: 2em; }
 
+h3 {
+  color: #162157;
+  font-weight: bold; }
+
 p {
   font-size: 1rem;
   max-width: 750px; }
@@ -25,7 +29,7 @@ p {
 a, a:visited {
   color: #0071AD; }
   a:hover, a:visited:hover {
-    color: #A9C8E5;
+    color: #162157;
     cursor: pointer; }
 
 header, section, footer {
@@ -44,10 +48,14 @@ footer {
       font-size: .675rem;
       line-height: 1rem; }
 
+.image {
+  width: 100%;
+  height: auto; }
+
 .container {
-  max-width: 1256px;
+  max-width: 1000px;
   margin: 0 auto;
-  padding: 0 30px; }
+  padding: 0 20px; }
 
 .sketch-row {
   display: -ms-flexbox;
@@ -79,3 +87,20 @@ footer {
     .sketch-row {
       -ms-flex-wrap: nowrap;
           flex-wrap: nowrap; } }
+
+button,
+.button {
+  border-radius: 6px;
+  padding: 20px 40px;
+  background: #0071AD;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  color: #fff;
+  font-size: 1rem; }
+  button:hover, button:active, button.active,
+  .button:hover,
+  .button:active,
+  .button.active {
+    cursor: pointer;
+    background: #162157;
+    color: #fff; }
