@@ -1,17 +1,6 @@
 $border-radius: 6px;
 $border-sz: 4px;
 
-@media only screen and (max-width: 600px) {
-	body {
-		margin: 60px 40px;
-		width: 100%;
-	}
-	h1 {
-		font-size: 3rem; }
-	h2 {
-		font-size: 2rem; }
-}
-
 body {
 	margin: 0;
 	font-family: $font-fam-sans;
@@ -144,4 +133,32 @@ button,
 		background: $c-blue-dark;
 		color: $c-white;
 	}
+}
+
+@media only screen and (max-width: 600px) {
+	.container {
+		width: auto;
+		max-width: 100%;
+		height: auto;
+		flex-wrap: wrap; 
+	}
+	.image {
+		width: auto;
+		max-width: 100%;
+		height: auto;
+	}
+
+	.button {
+		width: 100%;
+	}
+
+	body {
+		margin: 60px 40px;
+		width: 100%;
+		max-width: 100%;
+	}
+	h1 {
+		font-size: 4rem; }
+	h2 {
+		font-size: 3rem; }
 }
