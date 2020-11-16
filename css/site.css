@@ -1,41 +1,40 @@
 * {
   box-sizing: border-box; }
 
+@media only screen and (max-width: 600px) {
+  body {
+    margin: 60px 40px;
+    width: 100%; }
+  h1 {
+    font-size: 3rem; }
+  h2 {
+    font-size: 2rem; } }
+
 body {
   margin: 0;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   color: #353535; }
-  @media only screen and (min-width: 800px) {
-    body {
-      margin: 60px 40px; } }
 
 p, h1, h2, h3 {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-weight: 400; }
 
 h1 {
-  font-size: 3em;
+  font-size: 3rem;
   font-weight: 600;
   color: #162157;
   margin-top: 40px; }
-  @media only screen and (min-width: 800px) {
-    h1 {
-      font-size: 5em; } }
 
 h2 {
   color: #162157;
-  font-size: 2em; }
-  @media only screen and (min-width: 800px) {
-    h2 {
-      font-size: 4em; } }
+  font-size: 2rem; }
 
 h3 {
   color: #162157;
   font-weight: bold; }
 
 p {
-  font-size: 1rem;
-  max-width: 750px; }
+  font-size: 1rem; }
 
 a, a:visited {
   color: #0071AD; }
@@ -66,7 +65,8 @@ footer {
 .container {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 0 20px; }
+  padding: 0 20px;
+  height: auto; }
 
 .sketch-row {
   display: -ms-flexbox;
@@ -79,7 +79,7 @@ footer {
   .sketch-row__wireframe {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%; }
-    @media only screen and (min-width: 800px) {
+    @media only screen and (min-width: 600px) {
       .sketch-row__wireframe {
         -ms-flex-preferred-size: 35%;
             flex-basis: 35%;
@@ -93,8 +93,9 @@ footer {
   .sketch-row--spacing > *:not(:first-of-type) {
     margin-left: 20px; }
   .sketch-row img {
-    width: 100%; }
-  @media only screen and (min-width: 800px) {
+    width: 100%;
+    height: auto; }
+  @media only screen and (max-width: 600px) {
     .sketch-row {
       -ms-flex-wrap: nowrap;
           flex-wrap: nowrap; } }
@@ -105,9 +106,12 @@ button,
   padding: 20px 40px;
   background: #0071AD;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  font-size: 24px;
-  color: #fff;
-  font-size: 1rem; }
+  font-size: 2rem;
+  color: #fff; }
+  @media only screen and (max-width: 600px) {
+    button,
+    .button {
+      font-size: 2rem; } }
   button:hover, button:active, button.active,
   .button:hover,
   .button:active,
