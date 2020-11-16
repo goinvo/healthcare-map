@@ -1,79 +1,16 @@
 $border-radius: 6px;
 $border-sz: 4px;
 
-body {
-	margin: 0;
-	font-family: $font-fam-sans;
-	color: $c-text;
-}
-
-p, h1, h2, h3 {
-  font-family: $font-fam-default;
-	font-weight: $font-weight-normal;
-}
-
-
-h1 {
-	font-size: 3rem;
-	font-weight: 600;
-	color: $c-blue-dark;
-	margin-top: 40px;
-}
-
-h2 {
-	color: $c-blue-dark;
-	font-size: 2rem;
-}
-
-h3 {
-	color: $c-blue-dark;
-	font-weight: bold;
-}
-
-p {
-	font-size: $fs-base;
-}
-
-a, a:visited {
-	color: $c-link;
-	&:hover {
-		color: $c-blue-dark;
-		cursor: pointer;
-	}
-}
-
-header, section, footer {
-	width: 100%;
-	position: relative;
-}
-
-footer {
-	background: $bg-dark-grey;
-  color: $c-text;
-	padding: 50px 0;
-	text-align: center;
-	margin-top: 20px;
-	.copyright {
-		padding-top: 30px;
-		p {
-			font-size: .675rem;
-			line-height: 1rem; }
-	}
-}
-
-.image {
-	width: 100%;
-  // max-width: 750px;
-  height: auto;
-  // box-shadow: 0px 4px 8px 2px rgba(14,120,197,.2);
-}
-
 .container {
 	max-width: 1000px;
 	margin: 0 auto;
   padding: 0 20px;
 	height: auto;
+}
 
+img{
+	width: 100%;
+  height: auto;
 }
 
 .sketch-row {
@@ -135,19 +72,79 @@ button,
 	}
 }
 
+body {
+	margin: 0;
+	font-family: $font-fam-sans;
+	color: $c-text;
+}
+
+p, h1, h2, h3 {
+  font-family: $font-fam-default;
+	font-weight: $font-weight-normal;
+}
+
+h1 {
+	font-size: 3rem;
+	font-weight: 600;
+	color: $c-blue-dark;
+	margin-top: 40px;
+}
+
+h2 {
+	color: $c-blue-dark;
+	font-size: 2rem;
+}
+
+h3 {
+	color: $c-blue-dark;
+	font-weight: bold;
+}
+
+p {
+	font-size: $fs-base;
+}
+
+a, a:visited {
+	color: $c-link;
+	&:hover {
+		color: $c-blue-dark;
+		cursor: pointer;
+	}
+}
+
+header, section, footer {
+	width: 100%;
+	position: relative;
+}
+
+footer {
+	background: $bg-dark-grey;
+  color: $c-text;
+	padding: 50px 0;
+	text-align: center;
+	margin-top: 20px;
+	.copyright {
+		padding-top: 30px;
+		p {
+			font-size: .675rem;
+			line-height: 1rem; }
+	}
+}
+
 @media only screen and (max-width: 600px) {
 	.container {
 		width: auto;
 		max-width: 100%;
 		height: auto;
-		flex-wrap: wrap; 
 	}
+
 	.image {
 		width: auto;
 		max-width: 100%;
 		height: auto;
 	}
 
+	button,
 	.button {
 		width: 100%;
 	}
@@ -157,8 +154,10 @@ button,
 		width: 100%;
 		max-width: 100%;
 	}
+
 	h1 {
-		font-size: 4rem; }
-	h2 {
 		font-size: 3rem; }
+
+	h2 {
+		font-size: 2rem; }
 }

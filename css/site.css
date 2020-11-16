@@ -1,62 +1,14 @@
 * {
   box-sizing: border-box; }
 
-body {
-  margin: 0;
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  color: #353535; }
-
-p, h1, h2, h3 {
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  font-weight: 400; }
-
-h1 {
-  font-size: 3rem;
-  font-weight: 600;
-  color: #162157;
-  margin-top: 40px; }
-
-h2 {
-  color: #162157;
-  font-size: 2rem; }
-
-h3 {
-  color: #162157;
-  font-weight: bold; }
-
-p {
-  font-size: 1rem; }
-
-a, a:visited {
-  color: #0071AD; }
-  a:hover, a:visited:hover {
-    color: #162157;
-    cursor: pointer; }
-
-header, section, footer {
-  width: 100%;
-  position: relative; }
-
-footer {
-  background: #E6EEF4;
-  color: #353535;
-  padding: 50px 0;
-  text-align: center;
-  margin-top: 20px; }
-  footer .copyright {
-    padding-top: 30px; }
-    footer .copyright p {
-      font-size: .675rem;
-      line-height: 1rem; }
-
-.image {
-  width: 100%;
-  height: auto; }
-
 .container {
   max-width: 1000px;
   margin: 0 auto;
   padding: 0 20px;
+  height: auto; }
+
+img {
+  width: 100%;
   height: auto; }
 
 .sketch-row {
@@ -111,17 +63,64 @@ button,
     background: #162157;
     color: #fff; }
 
+body {
+  margin: 0;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  color: #353535; }
+
+p, h1, h2, h3 {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 400; }
+
+h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #162157;
+  margin-top: 40px; }
+
+h2 {
+  color: #162157;
+  font-size: 2rem; }
+
+h3 {
+  color: #162157;
+  font-weight: bold; }
+
+p {
+  font-size: 1rem; }
+
+a, a:visited {
+  color: #0071AD; }
+  a:hover, a:visited:hover {
+    color: #162157;
+    cursor: pointer; }
+
+header, section, footer {
+  width: 100%;
+  position: relative; }
+
+footer {
+  background: #E6EEF4;
+  color: #353535;
+  padding: 50px 0;
+  text-align: center;
+  margin-top: 20px; }
+  footer .copyright {
+    padding-top: 30px; }
+    footer .copyright p {
+      font-size: .675rem;
+      line-height: 1rem; }
+
 @media only screen and (max-width: 600px) {
   .container {
     width: auto;
     max-width: 100%;
-    height: auto;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
+    height: auto; }
   .image {
     width: auto;
     max-width: 100%;
     height: auto; }
+  button,
   .button {
     width: 100%; }
   body {
@@ -129,6 +128,6 @@ button,
     width: 100%;
     max-width: 100%; }
   h1 {
-    font-size: 4rem; }
+    font-size: 3rem; }
   h2 {
-    font-size: 3rem; } }
+    font-size: 2rem; } }
