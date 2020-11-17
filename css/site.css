@@ -46,15 +46,10 @@ img {
 button,
 .button {
   border-radius: 6px;
-  padding: 20px 40px;
+  padding: 10px 20px;
   background: #0071AD;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  font-size: 2rem;
   color: #fff; }
-  @media only screen and (max-width: 600px) {
-    button,
-    .button {
-      font-size: 2rem; } }
   button:hover, button:active, button.active,
   .button:hover,
   .button:active,
@@ -124,7 +119,6 @@ footer {
   .button {
     width: 100%; }
   body {
-    margin: 60px 40px;
     width: 100%;
     max-width: 100%; }
   h1 {
