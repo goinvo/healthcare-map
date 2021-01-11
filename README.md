@@ -34,3 +34,7 @@ You can access the local server at [localhost:1337](localhost:8001)
 ### Committing updates
 
 As a github.io page, when changes are committed to master, they are pushed to the live site at [https://goinvo.github.io/healthcare-map/](https://goinvo.github.io/healthcare-map/).
+
+### License
+
+This open source project is licensed under the Apache license (https://www.apache.org/licenses/LICENSE-2.0).
