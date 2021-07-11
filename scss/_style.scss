@@ -55,13 +55,14 @@ img{
 button,
 .button {
 	border-radius: $border-radius;
-	padding: 20px 40px;
+	padding: 10px 20px;
 	background: $c-link;
 	font-family: $font-fam-default;
-  font-size: 2rem;
+	// font-size: 2rem;
 	color: $c-white;
 		@media only screen and (max-width: 600px) {
-		font-size: 2rem;}
+		// font-size: 2rem;
+	}
 
 	&:hover,
 	&:active,
@@ -150,7 +151,6 @@ footer {
 	}
 
 	body {
-		margin: 60px 40px;
 		width: 100%;
 		max-width: 100%;
 	}
